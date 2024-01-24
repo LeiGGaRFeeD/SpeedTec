@@ -26,4 +26,13 @@ public class Camera : MonoBehaviour
         // Направляем камеру на цель
         transform.LookAt(target);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<CameraTopDown>() == true)
+        {
+            distance = 0;
+            height = 90;
+            rotationSpeed = 5;
+        }
+    }
 }
