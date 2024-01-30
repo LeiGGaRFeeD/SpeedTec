@@ -42,5 +42,6 @@ public class Player: MonoBehaviour
         {
             isJumping = false;
         }
+
     }
 }
