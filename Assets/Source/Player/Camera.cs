@@ -103,7 +103,7 @@ public class Camera : MonoBehaviour
             CancelInvoke();
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.GetComponent<CameraTopDown>() == true)
         {
